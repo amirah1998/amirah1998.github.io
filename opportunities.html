@@ -1,0 +1,147 @@
+<html>
+<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+		document.getElementById("nav01").innerHTML =
+		</script>
+<style>
+.createEvent{
+size: 100px;
+}
+			h1{
+				font-size:18px;
+			}
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+			color: rgba(119, 119, 119, 1);
+		}
+		#custom-bootstrap-menu.navbar-default {
+			font-size: 16px;
+			background-color: rgba(41, 155, 164, 1);
+			background: -webkit-linear-gradient(top, rgba(248, 248, 248, 1) 0%, rgba(41, 155, 164, 1) 100%);
+			background: linear-gradient(to bottom, rgba(248, 248, 248, 1) 0%, rgba(41, 155, 164, 1) 100%);
+			border-width: 2px;
+			border-radius: 4px;
+		}
+		#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+			color: rgba(119, 119, 119, 1);
+			background-color: rgba(209, 204, 227, 1);
+			background: -webkit-linear-gradient(top, rgba(248, 248, 248, 0) 0%, rgba(209, 204, 227, 1) 100%);
+			background: linear-gradient(to bottom, rgba(248, 248, 248, 0) 0%, rgba(209, 204, 227, 1) 100%);
+		}
+		#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+		#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+			color: rgba(51, 51, 51, 1);
+			background-color: rgba(184, 173, 173, 1);
+			background: -webkit-linear-gradient(top, rgba(248, 248, 248, 0) 0%, rgba(184, 173, 173, 1) 100%);
+			background: linear-gradient(to bottom, rgba(248, 248, 248, 0) 0%, rgba(184, 173, 173, 1) 100%);
+		}
+		#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+		#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+		#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+			color: rgba(51, 51, 51, 1);
+			background-color: rgba(214, 191, 191, 1);
+			background: -webkit-linear-gradient(top, rgba(231, 231, 231, 1) 0%, rgba(214, 191, 191, 1) 100%);
+			background: linear-gradient(to bottom, rgba(231, 231, 231, 1) 0%, rgba(214, 191, 191, 1) 100%);
+		}
+		#custom-bootstrap-menu.navbar-default .navbar-toggle {
+			border-color: #d6bfbf;
+		}
+		#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+		#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+			background-color: #d6bfbf;
+		}
+		#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+			background-color: #d6bfbf;
+		}
+		#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+		#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+			background-color: #299ba4;
+		}
+</style>
+<style type ="css/text">
+	#tfheader{
+		background-color:#DF6DFF;
+	}
+	#tfnewsearch{
+		float:right;
+		padding:5px;
+	}
+	.tftextinput{
+		margin: 0;
+		padding: 5px 5px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		border:1px solid #DA81F5; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	.tfbutton {
+		margin: 0;
+		padding: 5px 5px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #DA81F5;
+		border: solid 1px #DA81F5; border-right:0px;
+		background: #0095cd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.tfbutton:hover {
+		text-decoration: none;
+		background: #007ead;
+		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	}
+	.tfbutton::-moz-focus-inner {
+	  border: 0;
+	}
+	.tfclear{
+		clear:both;
+	}
+</style>
+</head>
+<body>
+	<h1><a href="profilepage.html"> <img src = "profile.jpg" height="23px" width= "23px"/></a>Profile</h1>
+	 <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+			<div class="container-fluid">
+				<div class="collapse navbar-collapse navbar-menubuilder">
+					<ul class="nav navbar-nav navbar-left">
+						<li><a href="finalnewsfeednew.html"><img src ="icon-home.png" height = "30px" width = "30px"/><br>Home</a></li>
+						<li class="active"><a href="opportunities.html"><img src ="light-bulb-7.png" height = "30px" width = "30px"/><br>Opportunities</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><form id="tfnewsearch" method="get" action="http://www.google.com" align ="right">
+							<input type="text" class="tftextinput" name="q" size="10" maxlength=""><input type="submit" value="search" class="tfbutton">
+						</form> </li>
+						<li><a href="signin.html"><span class="glyphicon glyphicon-user"></span> Sign Out</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+<h1>Check out Events, Programs or Hackathons for women </h1>
+<h2>Create an Event Here:</h2>
+<form action="opportunities.html" class = "createEvent" method="POST">
+<fieldset>
+When:<input type="text" name="When:" size=35 maxlength=50 value="" placeholder = "Example:Auggust 2nd"><br>
+Where:<input type="text" name="Where:" size=35 maxlength=50 value="" placeholder = "Example:Tysons"><br>
+Who:<br>
+<input type ="Radio" name="Who" value = "Who">Female<br>
+<input type ="Radio" name="Who" value = "Who">Females and Males<br>
+What:<input type="text" name="When:" size=35 maxlength=50 value="" placeholder = "Example:Dchacks Hackathon"><br>
+How do you apply/Register:<input type="text" name = "Apply?" value = "" size = 50 maxlength =100 value="" placeholder = "Example:Go to DC hacks website and register"><br>
+Price:<input type = "text" name ="Price" value="" size=35 maxlength=50 placeholder = "Example:Free, just get here!"><br>
+Prizes:<input type="text" name="Prize" size=35 maxlength=50 value="" placeholder = "optional"><br>
+<input type=submit value="Create Event">
+</fieldset>
+</form>
+</body>
+</html>

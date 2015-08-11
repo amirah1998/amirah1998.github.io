@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<script language="javascript">
+            function check(form) { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.userid.value == "Emilee" && form.pswrd.value == "cat") {
+                    window.open('finalnewsfeednew.html')/*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("Error Password or Username")/*displays error message*/
+                }
+            }
+        </script>
+		<link rel="shortcut icon" href="wtechconnect.png">
+		<link href='http://fonts.googleapis.com/css?family=Noto+Serif' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <title>Login page</title>
+		<style>
+			body{
+				background-color:white;
+			}
+			#signin,#sign{
+				float:right;
+				font-size:15px;
+				color: 8B3AC9;
+				height: 400px;
+				width:500px;
+				border:5px;
+				padding:8px;
+				background-color:rgba(139,58,201,0.2);
+			}
+			#header {
+				background-color:#299BA4;
+				text-align:center;
+				padding:5px;
+			}
+			#head{
+				color:#8B3AC9;
+			}
+			#section {
+				font-family: 'Noto Serif', serif;
+				font-weight:200;
+				font-size:27px;
+				width:600px;
+				float:left;
+				padding:10px; 
+			}
+			#footer {
+				background-color:#299BA4;
+				color:#8B3AC9;
+				clear:both;
+				text-align:center;
+				padding:6px; 
+			}
+			#p3{
+				font-family: 'Pacifico', cursive;
+				font-size:24px;
+				font-weight:300;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<img src="wtechconnect.png" height="150px" width= "350px"/>
+		</div>
+		<div id="section">
+			<h2 id="head">Welcome to WTechConnect</h2>
+			<p>Find new opportunities, mentors, and learn more about women in tech today!</p>
+			<p>A place to connect with other women or girls who are interested in tech.</p>
+			<p id="p3"> Help bridge the gender gap in the stem fields by reaching out to other women and breaking barriers.</p>
+		</div><br>
+		<div id="signin" align="center">
+			<form id="sign" name="login" align="center">
+				<h2>Sign in</h2>
+				Username:<br><input type="text" name="userid"/><br>
+				Password:<br><input type="password" name="pswrd"/><br><br>
+				<input type="button" onclick="check(this.form)" value="Login"/>
+				<input type="reset" value="Cancel"/>
+				<h3>Don't have an account? Sign up</h3>
+				First name:<br><input type="text" name="first" placeholder="John"/><br>
+				Last name:<br><input type="text" name="last" placeholder="Smith"/><br>
+				Email:<br><input type="text" name="Email" placeholder="John.smith@gmail.com"/><br>
+				Password:<br><input type="text" name="Pass" placeholder="*******"/><br>	 
+				<input type="button" onclick="check(this.form)" value="Sign up"/>
+			</form>
+		</div><br>
+		<footer id="footer">
+			Copyright © WTechConnect.com <img src="wtechconnect.png" height="30px" width="30"/>
+		</footer>
+    </body>
+</html>
