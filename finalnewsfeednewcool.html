@@ -37,7 +37,7 @@
 			}
 			
 			h1{
-				font-size:18px;
+				font-size:20px;
 			}
 			
 			ul. list-unstyled{
@@ -48,15 +48,21 @@
 			}
 			
 			h3{
-				background-color:#d6bfbf;
 				width: 320px; 
 				padding: 10px; 
-				border: 5px solid gray; 
+				border: 5px groove #299ba4;; 
 				margin: 0;
 				font-size:16px;
 				float-right:150px;
 			}
-			
+			#header {
+				background-color:#299BA4;
+				text-align:center;
+				padding:5px;
+			}
+			#prof{
+			float:left;
+			}
 			#custom-bootstrap-menu.navbar-default .navbar-brand {
 			color: rgba(119, 119, 119, 1);
 		}
@@ -103,6 +109,14 @@
 		#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
 			background-color: #299ba4;
 		}
+		#footer {
+				background-color:#299BA4;
+				color:#8B3AC9;
+				clear:both;
+				text-align:center;
+				padding:6px; 
+				float: bottom;
+			}
 
 		</style>
 		
@@ -171,15 +185,17 @@
 	</head>
 	<body>
 		<!-- profile tab  -->
-		<h1><a href="profilepage.html"> <img src = "profile.jpg" height="23px" width= "23px"/>
-		</a>Profile</h1>
+		<div id="header">
+			<img src="wtechconnect.png" height="80px" width= "100px"/>
+			<h1 id="prof"><a href="profilepage.html"> <img src = "FullSizeRender.jpg" height="54px" width= "53px"/></a>Profile</h1>
+		</div>
 			<!-- nav bar and list of tabs -->
 
 		  <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
 			<div class="container-fluid">
 				<div class="collapse navbar-collapse navbar-menubuilder">
 					<ul class="nav navbar-nav navbar-left">
-						<li class="active home"><a href="finalnewsfeednew.html"><img src ="icon-home.png" height = "30px" width = "30px"/><br>Home</a></li>
+						<li class="active home"><a href="finalnewsfeednewcool.html"><img src ="icon-home.png" height = "30px" width = "30px"/><br>Home</a></li>
 						<li><a href="opportunities.html"><img src ="light-bulb-7.png" height = "30px" width = "30px"/><br>Opportunities</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
@@ -206,5 +222,8 @@
 			<!-- creating list for myFunction();-->
 			<ul class="list-unstyled"id= "text"></ul>
 		</div>
+		<footer id="footer">
+			Copyright © WTechConnect.com <img src="wtechconnect.png" height="30px" width="30"/>
+		</footer>
 	</body>
 </html>

@@ -12,7 +12,15 @@
 size: 100px;
 }
 			h1{
-				font-size:18px;
+				font-size:20px;
+			}
+			#header {
+				background-color:#299BA4;
+				text-align:center;
+				padding:5px;
+			}
+			#prof{
+			float:left;
 			}
 #custom-bootstrap-menu.navbar-default .navbar-brand {
 			color: rgba(119, 119, 119, 1);
@@ -60,6 +68,14 @@ size: 100px;
 		#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
 			background-color: #299ba4;
 		}
+		#footer {
+				background-color:#299BA4;
+				color:#8B3AC9;
+				clear:both;
+				text-align:center;
+				padding:6px; 
+				float: bottom;
+			}
 </style>
 <style type ="css/text">
 	#tfheader{
@@ -110,12 +126,16 @@ size: 100px;
 </style>
 </head>
 <body>
-	<h1><a href="profilepage.html"> <img src = "profile.jpg" height="23px" width= "23px"/></a>Profile</h1>
+	
+	<div id="header">
+			<img src="wtechconnect.png" height="80px" width= "100px"/>
+			<h1 id="prof"><a href="profilepage.html"> <img src = "FullSizeRender.jpg" height="54px" width= "53px"/></a>Profile</h1>
+		</div>
 	 <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
 			<div class="container-fluid">
 				<div class="collapse navbar-collapse navbar-menubuilder">
 					<ul class="nav navbar-nav navbar-left">
-						<li><a href="finalnewsfeednew.html"><img src ="icon-home.png" height = "30px" width = "30px"/><br>Home</a></li>
+						<li><a href="finalnewsfeednewcool.html"><img src ="icon-home.png" height = "30px" width = "30px"/><br>Home</a></li>
 						<li class="active"><a href="opportunities.html"><img src ="light-bulb-7.png" height = "30px" width = "30px"/><br>Opportunities</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
@@ -127,11 +147,11 @@ size: 100px;
 				</div>
 			</div>
 		</div>
-<h1>Check out Events, Programs or Hackathons for women </h1>
+<h1>Check out Events, Programs, or Hackathons for women in tech! </h1>
 <h2>Create an Event Here:</h2>
 <form action="opportunities.html" class = "createEvent" method="POST">
 <fieldset>
-When:<input type="text" name="When:" size=35 maxlength=50 value="" placeholder = "Example:Auggust 2nd"><br>
+When:<input type="text" name="When:" size=35 maxlength=50 value="" placeholder = "Example:August 2nd"><br>
 Where:<input type="text" name="Where:" size=35 maxlength=50 value="" placeholder = "Example:Tysons"><br>
 Who:<br>
 <input type ="Radio" name="Who" value = "Who">Female<br>
@@ -143,5 +163,8 @@ Prizes:<input type="text" name="Prize" size=35 maxlength=50 value="" placeholder
 <input type=submit value="Create Event">
 </fieldset>
 </form>
+<footer id="footer">
+			Copyright © WTechConnect.com <img src="wtechconnect.png" height="30px" width="30"/>
+		</footer>
 </body>
 </html>
